@@ -1,14 +1,16 @@
-﻿生成启动时间为 2019/6/3 星期一 22:45:40。
-     1>项目“G:\我的代码\简单三子棋\简单三子棋\简单三子棋.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 2019/6/27 星期四 15:23:49。
+     1>项目“G:\StudyGit\简单三子棋\简单三子棋\简单三子棋.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         D:\Visual Studio\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt test.c
+         D:\Visual Studio\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt game.c test.c
          test.c
+         game.c
+         正在生成代码...
        Link:
-         D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\我的代码\简单三子棋\Debug\简单三子棋.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:\我的代码\简单三子棋\Debug\简单三子棋.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\我的代码\简单三子棋\Debug\简单三子棋.lib" /MACHINE:X86 Debug\game.obj
+         D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\StudyGit\简单三子棋\Debug\简单三子棋.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:\StudyGit\简单三子棋\Debug\简单三子棋.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\StudyGit\简单三子棋\Debug\简单三子棋.lib" /MACHINE:X86 Debug\game.obj
          Debug\test.obj
-         简单三子棋.vcxproj -> G:\我的代码\简单三子棋\Debug\简单三子棋.exe
-     1>已完成生成项目“G:\我的代码\简单三子棋\简单三子棋\简单三子棋.vcxproj”(Build 个目标)的操作。
+         简单三子棋.vcxproj -> G:\StudyGit\简单三子棋\Debug\简单三子棋.exe
+     1>已完成生成项目“G:\StudyGit\简单三子棋\简单三子棋\简单三子棋.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:00.66
+已用时间 00:00:01.48

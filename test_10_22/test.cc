@@ -24,7 +24,7 @@ T Add(const T& left,const T& right)
 {
     return left + right;
 }
-
+//哈哈，今天又是啥都没干的一天，明天好好学习
 int main()
 {
     int a1 = 10, a2 = 20;

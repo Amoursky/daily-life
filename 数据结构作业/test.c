@@ -49,7 +49,6 @@ void test()
                 printf("选择错误！请重新选择！\n");
         }
     } while (input);
-
 }
 int main()
 {

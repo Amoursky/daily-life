@@ -4,4 +4,4 @@ test:work.h work.c test.c
 	rm work.h.gch
 .PHONY:clean
 clean:
-	rm test work.h.gch
+	rm test

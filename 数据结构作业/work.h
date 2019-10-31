@@ -6,7 +6,6 @@
 #define PEO_MAX 2   //自定义刚开始的容量
 #define NAME_MAX 10 //自定义为名字分配空间的大小
 
-
 enum num //枚举常量
 {
     esc,

@@ -25,6 +25,7 @@ typedef struct stuinfo
     int shuxue;//数学成绩
     int yingyu;//英语成绩
 }stuinfo;
+
 typedef struct contact
 {
     stuinfo *people;//维护动态开辟的内存；

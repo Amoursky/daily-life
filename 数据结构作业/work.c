@@ -396,3 +396,4 @@ void read_contact(contact* pcon)//读取文件中的数据到程序
 
 
 
+

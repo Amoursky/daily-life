@@ -3,7 +3,9 @@ using namespace std;
 
 int main()
 {
-    string s("hello,bit!!!");
+    // string s("hello,bit!!!");
+    string s;
+    getline(cin,s);
     cout<<s.length()<<endl;
     cout<<s.size()<<endl;
     cout<<s.capacity()<<endl;

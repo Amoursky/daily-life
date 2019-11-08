@@ -43,11 +43,12 @@ void test1()
 
 void test2()
 {
-    string s1("bitedance");
+    string s1("bitdance");
     for(auto e : s1)
     {
-        cout << e << endl;
+        cout << e << " ";
     }
+    cout << endl;
 }
 
 int main()

@@ -1,30 +1,46 @@
 #include<iostream>
 using namespace std;
 
-int main()
+// int main()
+// {
+//     // string s("hello,bit!!!");
+//     string s;
+//     getline(cin,s);
+//     cout<<s.length()<<endl;
+//     cout<<s.size()<<endl;
+//     cout<<s.capacity()<<endl;
+//     cout<<s<<endl;
+//     s.clear();
+//     cout<<s.size()<<endl;
+//     cout<<s.capacity()<<endl;
+//     s.resize(10,'a');
+//     cout<<s.size()<<endl;
+//     cout<<s.capacity()<<endl;
+//     cout<<s<<endl;
+//     s.resize(15);
+//     cout<<s.size()<<endl;
+//     cout<<s.capacity()<<endl;
+//     cout<<s<<endl;
+//     s.resize(5);
+//     cout<<s.size()<<endl;
+//     cout<<s.capacity()<<endl;
+//     cout<<s<<endl;
+//     return 0;
+// }
+
+void test()
 {
-    // string s("hello,bit!!!");
-    string s;
-    getline(cin,s);
-    cout<<s.length()<<endl;
-    cout<<s.size()<<endl;
-    cout<<s.capacity()<<endl;
-    cout<<s<<endl;
-    s.clear();
-    cout<<s.size()<<endl;
-    cout<<s.capacity()<<endl;
-    s.resize(10,'a');
-    cout<<s.size()<<endl;
-    cout<<s.capacity()<<endl;
-    cout<<s<<endl;
-    s.resize(15);
-    cout<<s.size()<<endl;
-    cout<<s.capacity()<<endl;
-    cout<<s<<endl;
-    s.resize(5);
-    cout<<s.size()<<endl;
-    cout<<s.capacity()<<endl;
-    cout<<s<<endl;
-    return 0;
+    string s1("keda");
+    for(int i = 0;i < s1.size();i++)
+    {
+        cout << s1[i] << " ";
+        cout << s1.operator[](i) << endl;
+    }
+    cout << endl;
 }
 
+int main()
+{
+    test();
+    return 0;
+}

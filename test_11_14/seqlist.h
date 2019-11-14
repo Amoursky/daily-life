@@ -6,7 +6,9 @@ typedef int SLDataType;
 
 typedef struct SeqList 
 {
-    SLDataType* array; // 指向动态开辟的数组 size_t size ; // 有效数据个数 size_t capicity ; // 容量空间的大小
+    SLDataType* array; // 指向动态开辟的数组 
+    size_t size ; // 有效数据个数 
+    size_t capicity ; // 容量空间的大小
 }SeqList;
 // 基本增删查改接口
 void SeqListInit(SeqList* psl, size_t capacity); void SeqListDestory(SeqList* psl);

@@ -25,4 +25,6 @@ void SeqListRemove(SeqList* psl, SLDataType x);
 void SeqListModify(SeqList* psl, size_t pos, SLDataType x);
 void SeqListPrint(SeqList* psl);
 
+int add(int a,int b);
+
 #endif //_SEQLIST_H_

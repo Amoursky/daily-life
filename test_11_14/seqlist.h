@@ -11,7 +11,8 @@ typedef struct SeqList
     size_t capicity ; // 容量空间的大小
 }SeqList;
 // 基本增删查改接口
-void SeqListInit(SeqList* psl, size_t capacity); void SeqListDestory(SeqList* psl);
+void SeqListInit(SeqList* psl, size_t capacity); 
+void SeqListDestory(SeqList* psl);
 void CheckCapacity(SeqList* psl);
 void SeqListPushBack(SeqList* psl, SLDataType x);
 void SeqListPopBack(SeqList* psl);

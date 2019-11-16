@@ -23,9 +23,9 @@ int main()
 	//SeqListPopFront(&test);
 	//SeqListPopFront(&test);
 	//SeqListPopFront(&test);
-	SeqListInsert(&test, 0, 10);
-	SeqListErase(&test, 0);
-
+	//SeqListInsert(&test, 0, 10);
+	//SeqListErase(&test, 0);
+	SeqListRemove(&test, 7);
 
 
 	SeqListPrint(&test);

@@ -116,3 +116,44 @@ void SeqListModify(SeqList* psl, size_t pos, SLDataType x)
 	psl->array[pos] = x;
 }
 
+void SeqListBubbleSort(SeqList* psl)
+{
+	int i = 0, j = 0;
+	SLDataType tmp;
+	for (i = 0; i < psl->size - 1; i++)
+	{
+		for (j = 0; j < psl->size - 1 - i; j++)
+		{
+			if (psl->array[j] > psl->array[j + 1])
+			{
+				tmp = psl->array[j];
+				psl->array[j] = psl->array[j + 1];
+				psl->array[j + 1] = tmp;
+			}
+		}
+	}
+}
+
+int SeqListBinartFind(SeqList* psl, SLDataType x)
+{
+	int start = 0;
+	int end = psl->size - 1;
+	int mid = 0;
+	while (start <= end)
+	{
+		mid = (start + end) / 2;
+		if (psl->array[mid] < x)
+		{
+			start = mid + 1;
+		}
+		else if (psl->array[mid] > x)
+		{
+			end = mid - 1;
+		}
+		else
+		{
+			return mid;
+		}
+	}
+	return -1;
+}

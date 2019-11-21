@@ -12,7 +12,7 @@ int main()
 	SListPushFront(&head, 3);
 	SListPushFront(&head, 2);
 	SListPushFront(&head, 1);
-	SListInsertAfter(SListFind(head,6), 9);
+	SListInsertAfter(SListFind(&head,6), 9);
 
 	SListPrint(&head);
 	system("pause");

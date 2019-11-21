@@ -59,9 +59,9 @@ void SListPrint(SListNode** pphead)
 	//}
 	for (tmp = *pphead; tmp; tmp = tmp->next)
 	{
-		printf("%d ", tmp->data);
+		printf("%d->", tmp->data);
 	}
-	printf("\n");
+	printf("NULL\n");
 }
 
 SListNode* SListFind(SListNode** pphead, SLTDataType x)
@@ -88,11 +88,21 @@ SListNode* SListFind(SListNode** pphead, SLTDataType x)
 void SListRemove(SListNode** pphead, SLTDataType x)
 {
 	SListNode* tmp;
+	if ((*pphead)->data == x)
+	{
+		SListPopFront(pphead);
+	}
 	for (tmp = *pphead; tmp; tmp = tmp->next)
 	{
-		if (tmp->data == x)
+		if (tmp->next->data == x)
 		{
 			SListEraseAfter(tmp);
+			return;
 		}
 	}
+}
+
+void SListDestory(SListNode* pphead)
+{
+
 }

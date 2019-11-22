@@ -13,8 +13,8 @@ int main()
 	SListPushFront(&head, 2);
 	SListPushFront(&head, 1);
 	SListInsertAfter(SListFind(&head,6), 9);
-
-	SListPrint(&head);
+	SListDestory(head);
+	//SListPrint(&head);
 	system("pause");
 	return 0;
 }

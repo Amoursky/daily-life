@@ -104,5 +104,9 @@ void SListRemove(SListNode** pphead, SLTDataType x)
 
 void SListDestory(SListNode* pphead)
 {
-
+	while (pphead->next)
+	{
+		SListEraseAfter(pphead);
+	}
+	free(pphead);
 }

@@ -10,7 +10,8 @@ SListNode* BuySListNode(SLTDataType x)
 
 void SListInit(SListNode** pphead)
 {
-	*pphead = BuySListNode((SLTDataType)0);
+	//*pphead = BuySListNode((SLTDataType)0);
+	*pphead = NULL;
 }
 
 void SListPushFront(SListNode** pphead, SLTDataType x)
@@ -39,7 +40,7 @@ void SListInsertAfter(SListNode* pos, SLTDataType x)
 }
 
 void SListEraseAfter(SListNode* pos)
-{
+{ 
 	SListNode* tmp = pos->next;
 	if (tmp == NULL)
 	{
@@ -102,11 +103,12 @@ void SListRemove(SListNode** pphead, SLTDataType x)
 	}
 }
 
-void SListDestory(SListNode* pphead)
+void SListDestory(SListNode** pphead)
 {
-	while (pphead->next)
+	while ((*pphead)->next)
 	{
-		SListEraseAfter(pphead);
+		SListEraseAfter(*pphead);
 	}
-	free(pphead);
+	free(*pphead);
+	*pphead = NULL;
 }

@@ -12,7 +12,7 @@ typedef struct SListNode
 }SListNode;
 
 void SListInit(SListNode** pphead);
-void SListDestory(SListNode* pphead);
+void SListDestory(SListNode** pphead);
 SListNode* BuySListNode(SLTDataType x);
 void SListPushFront(SListNode** pphead, SLTDataType x);
 void SListPopFront(SListNode** pphead); 

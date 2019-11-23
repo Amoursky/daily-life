@@ -12,9 +12,10 @@ int main()
 	SListPushFront(&head, 3);
 	SListPushFront(&head, 2);
 	SListPushFront(&head, 1);
-	SListInsertAfter(SListFind(&head,6), 9);
-	SListDestory(head);
-	//SListPrint(&head);
+	SListEraseAfter(SListFind(&head, 3));
+	//SListInsertAfter(SListFind(&head,6), 9);
+	SListDestory(&head);
+	SListPrint(&head);
 	system("pause");
 	return 0;
 }

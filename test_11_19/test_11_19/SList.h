@@ -21,5 +21,6 @@ void SListRemove(SListNode** pphead, SLTDataType x);
 void SListPrint(SListNode** pphead);
 void SListInsertAfter(SListNode* pos, SLTDataType x);
 void SListEraseAfter(SListNode* pos);
+void SListReverse(SListNode** pphead);
 
 #endif //_SLIST_H_

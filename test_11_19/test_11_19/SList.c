@@ -112,3 +112,8 @@ void SListDestory(SListNode** pphead)
 	free(*pphead);
 	*pphead = NULL;
 }
+
+void SListReverse(SListNode** pphead)
+{
+
+}

@@ -101,4 +101,5 @@ void BinaryTreePostorder(BTNode* root)
 	BinaryTreePostorder(root->_left);
 	BinaryTreePostorder(root->_right);
 	printf("%c ", root->_data);
+
 }

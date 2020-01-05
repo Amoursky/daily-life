@@ -73,13 +73,13 @@ int main()
 	BiTree root;
 	printf("Enter the data :\n");
 	CreateBiTree(&root);
-	printf("PreQrderTraverse the data:\n");
+	printf("前序遍历结果:\n");
 	PreQrderTraverse(&root);
 	printf("\n");
-	printf("InOrderTraverse the data:\n");
+	printf("中序遍历结果:\n");
 	InOrderTraverse(&root);
 	printf("\n");
-	printf("PostOrderTraverse the data:\n");
+	printf("后续遍历结果:\n");
 	PostOrderTraverse(&root);
 	printf("\n");
 	system("pause");

@@ -1,37 +1,63 @@
-#define OK 1
-#define ERROR 0
 #include<stdio.h>
 #include<stdlib.h>
+#include<assert.h>
 typedef char TElemType;
 typedef int Status;
 typedef struct BiTNode
 {
 	TElemType data;
 	struct BiTNode *lchild, *rchild; //左右孩子指针 
-}BiTNode, *BiTree;
+}BiTNode,*BiTree;
 
-void CreateBiTree(BiTree * T)   //二叉树的建立
+BiTNode* CreateBiTree(TElemType* a,Status* n)   //二叉树的建立
 {
+	assert(a);
 	TElemType ch;
-	scanf_s("%c", &ch);
-	if (ch == '#')
+	if (a[*n] == '#')
 	{
-		*T = NULL;
+		++(*n);
+		return NULL;
 	}
 	else
 	{
-		*T = (BiTree)malloc(sizeof(BiTNode));
+		BiTNode* root = (BiTNode*)malloc(sizeof(BiTNode));
+		root->data = a[*n];
+		++(*n);
+		root->lchild = CreateBiTree(a, n);
+		root->rchild = CreateBiTree(a, n);
+		return root;
 	}
-	if (!*T)
-	{
-		return;
-	}
-	else
-	{
-		(*T)->data = ch;
-		CreateBiTree(&(*T)->lchild);    //构造左子树
-		CreateBiTree(&(*T)->rchild);    //构造右子树
-	}
+	
+}
+
+void BiTreePrintf(TElemType* a)
+{
+	if (*a == 'A')
+		printf("数据结构总结\n");
+	if (*a == 'B')
+		printf("线性表\n");
+	if (*a == 'C')
+		printf("树");
+	if (*a == 'D')
+		printf("线性表的顺序表示和实现\n");
+	if (*a == 'E')
+		printf("线性表的链式表示和实现\n");
+	if (*a == 'F')
+		printf("二叉树的性质和存储结构\n");
+	if (*a == 'G')
+		printf("二叉树的遍历\n");
+	if (*a == 'H')
+		printf("线性表的顺序存储表示\n");
+	if (*a == 'I')
+		printf("顺序表中的基本操作的实现\n");
+	if (*a == 'J')
+		printf("单链表的定义和表示\n");
+	if (*a == 'K')
+		printf("单链表的基本操作实现\n");
+	if (*a == 'L')
+		printf("二叉树的性质\n");
+	if (*a == 'M')
+		printf("二叉树的存储结构\n");
 }
 
 void PreQrderTraverse(BiTree * T)   //前序遍历
@@ -40,7 +66,7 @@ void PreQrderTraverse(BiTree * T)   //前序遍历
 	{
 		return;
 	}
-	printf("%c ", (*T)->data);
+	BiTreePrintf(&((*T)->data));
 	PreQrderTraverse(&(*T)->lchild);    //先序先遍历左子树
 	PreQrderTraverse(&(*T)->rchild);    //然后在遍历右子树
 }
@@ -52,7 +78,7 @@ void InOrderTraverse(BiTree * T)    //中序遍历
 		return;
 	}
 	InOrderTraverse(&(*T)->lchild);
-	printf("%c ", (*T)->data);
+	BiTreePrintf(&((*T)->data));
 	InOrderTraverse(&(*T)->rchild);
 }
 
@@ -65,14 +91,16 @@ void PostOrderTraverse(BiTree * T)  //后序遍历
 	}
 	PostOrderTraverse(&(*T)->lchild);
 	PostOrderTraverse(&(*T)->rchild);
-	printf("%c ", (*T)->data);
+	BiTreePrintf(&((*T)->data));
 }
+
+
 
 int main()
 {
-	BiTree root;
-	printf("Enter the data :\n");
-	CreateBiTree(&root);
+	Status num = 0;
+	char a[] = "ABDH##I##EJ##K##CFL##M##G##";
+	BiTNode* root = CreateBiTree(a,&num);
 	printf("前序遍历结果:\n");
 	PreQrderTraverse(&root);
 	printf("\n");

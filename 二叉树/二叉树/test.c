@@ -55,9 +55,13 @@ void BiTreePrintf(TElemType* a)
 	if (*a == 'K')
 		printf("单链表的基本操作实现\n");
 	if (*a == 'L')
-		printf("二叉树的性质\n");
+		printf("五个计算性质\n");
 	if (*a == 'M')
-		printf("二叉树的存储结构\n");
+		printf("顺序和链式存储结构\n");
+	if(*a == 'N')
+		printf("前序和中序遍历\n");
+	if(*a == 'O')
+		printf("后序和层序遍历\n");
 }
 
 void PreQrderTraverse(BiTree * T)   //前序遍历
@@ -95,11 +99,10 @@ void PostOrderTraverse(BiTree * T)  //后序遍历
 }
 
 
-
 int main()
 {
 	Status num = 0;
-	char a[] = "ABDH##I##EJ##K##CFL##M##G##";
+	char a[] = "ABDH##I##EJ##K##CFL##M##GN##O##";
 	BiTNode* root = CreateBiTree(a,&num);
 	printf("前序遍历结果:\n");
 	PreQrderTraverse(&root);

@@ -20,6 +20,7 @@ void QueuePush(Queue* pq, QuDataType x)
 	}
 	*pq->rear = x;
 	pq->rear++;
+	pq->size++;
 
 	if (pq->rear - pq->data == QueueMAX)
 	{
@@ -34,4 +35,10 @@ void QueuePop(Queue* pq)
 		return;
 	}
 
+	pq->front++;
+	pq->size--;
+	if (pq->front - pq->data == QueueMAX)
+	{
+		pq->front = pq->data;
+	}
 }

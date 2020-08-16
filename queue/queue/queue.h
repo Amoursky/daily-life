@@ -17,7 +17,8 @@ void QueueInit(Queue* pq);
 void QueueDestory(Queue* pq);
 void QueuePush(Queue* pq, QuDataType x);
 void QueuePop(Queue* pq);
-
+QuDataType QueueFront(Queue* pq);
+QuDataType QueueBack(Queue* pq);
 
 #endif /*_QUEUE_H_*/
 

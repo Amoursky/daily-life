@@ -14,6 +14,10 @@ void QueueDestor(Queue* pq)
 
 void QueuePush(Queue* pq, QuDataType x)
 {
+	if (pq->size + 1 == QueueMAX)
+	{
+		return;
+	}
 	*pq->rear = x;
 	pq->rear++;
 
@@ -21,4 +25,13 @@ void QueuePush(Queue* pq, QuDataType x)
 	{
 		pq->rear = pq->data;
 	}
+}
+
+void QueuePop(Queue* pq)
+{
+	if (pq->size == 0)
+	{
+		return;
+	}
+
 }
